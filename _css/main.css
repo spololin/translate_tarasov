@@ -1,0 +1,47 @@
+body{
+    background: url("../_img/img_bg.jpg") 0 0 repeat;
+    width: 100%;
+    font-family: "baron_neueregular", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.main-wrapper{
+    margin-top: 85px;
+    outline: 2px solid red;
+}
+.logo{
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.logo span{
+    font-weight: 400;
+}
+.contacts{
+    font-family: Arial, sans-serif;
+    color: #f71c1c;
+    line-height: 22px;
+}
+.contacts a{
+    font-family: Arial, sans-serif;
+    color: #f71c1c;
+    text-decoration: none;
+}
+.btn_blog{
+    display: block;
+    padding: 6px 0;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px dashed #000000;
+    vertical-align: top;
+    text-align: center;
+}
+.btn_blog:hover{
+    border-color: #f71c1c;
+}
