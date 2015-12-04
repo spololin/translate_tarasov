@@ -1,5 +1,5 @@
 body{
-    background: url("../_img/img_bg.jpg") 0 0 repeat;
+    background: #ffffff url("../_img/img_bg.jpg") 0 0 repeat;
     width: 100%;
     font-family: "baron_neueregular", Arial, sans-serif;
     font-size: 14px;
@@ -7,8 +7,9 @@ body{
     font-weight: 400;
 }
 .main-wrapper{
+    position: relative;
     margin-top: 85px;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 .logo{
     font-size: 36px;
@@ -44,4 +45,164 @@ body{
 }
 .btn_blog:hover{
     border-color: #f71c1c;
+}
+.hello-text{
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.top-info{
+    color: #f71c1c;
+    margin-bottom: 40px;
+}
+.top-info-title{
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.info-item{
+    display: inline-block;
+    margin-right: 26px;
+    font-size: 0;
+}
+.info-item:last-of-type{
+    margin-right: 0;
+}
+.info-item:nth-of-type(2){
+    margin-right: 26px;
+}
+.item-inline{
+    display: inline-block;
+}
+.info-item .item-count{
+    font-size: 48px;
+    line-height: 22px;
+    margin-right: 10px;
+}
+.item-count .percent{
+    font-size: 24px;
+}
+.info-item .item-text{
+    font-size: 14px;
+    vertical-align: 4px;
+}
+.title{
+    font-size: 24px;
+    line-height: 22px;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    color: #f71c1c;
+}
+
+.trends-slogan{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.wrapper-cost{
+    position: relative;
+}
+.trends{
+    list-style: none;
+    padding-left: 64px;
+}
+.wrapper-label{
+    position: relative;
+
+}
+.wrapper-cost .cost-text{
+    position: absolute;
+    color: #f71c1c;
+    right: 60px;
+    bottom:55px;
+}
+.cost-text .text-count{
+    font-size: 36px;
+}
+.trend-item{
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.trend-item::before{
+    content: '';
+    position: absolute;
+    width:50px;
+    height: 50px;
+    left: -64px;
+    top: 7px;
+}
+.trend-item:not(:first-of-type){
+    line-height: 50px;
+    margin-top: 8px;
+}
+
+.trend-item .item-inner{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.satelite::before{
+    background: url("../_img/satellite.gif") no-repeat;
+}
+
+.gamepad::before{
+    top: -2px;
+    background: url("../_img/gamepad.gif") no-repeat;
+}
+.coins::before{
+    top:-2px;
+    background: url("../_img/coins.gif") no-repeat;
+}
+.compass::before{
+    top:-1px;
+    background: url("../_img/compass.gif") no-repeat;
+}
+.cost{
+    position: absolute;
+    background: #ff0707;
+    bottom: 15px;
+    left: 300px;
+    width: 127px;
+    height: 127px;
+    line-height: 107px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 1px dashed #ffffff;
+    box-shadow: 3px 3px 0 0 #ff0707, -3px -3px 0 0 #ff0707, -3px 3px 0 0 #ff0707, 3px -3px 0 0 #ff0707;
+}
+.cost .cost-from{
+    font-size:16px;
+}
+.cost .cost-count{
+    font-size: 48px;
+}
+
+.book{
+    position: absolute;
+    width: 450px;
+    height: 459px;
+    bottom: -150px;
+    left: -120px;
+}
+.phone{
+    z-index: -1;
+    position: absolute;
+    width: 233px;
+    height: 330px;
+    top: 50px;
+    right: 50px;
+}
+
+
+
+
+
+
+
+
+h1, h2, p, ul{
+    margin: 0px;
+    padding: 0;
 }
