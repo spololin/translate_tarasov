@@ -25,10 +25,15 @@ body{
     color: #f71c1c;
     line-height: 22px;
 }
-.contacts a{
+.contacts .mail{
     font-family: Arial, sans-serif;
     color: #f71c1c;
     text-decoration: none;
+    border-bottom: 1px dashed #000000;
+}
+.contacts .mail:hover{
+    border-bottom: 1px dashed #f71c1c;
+    color: #000000;
 }
 .btn_blog{
     display: block;
@@ -45,10 +50,12 @@ body{
 }
 .btn_blog:hover{
     border-color: #f71c1c;
+    color: #f71c1c;
 }
 .hello-text{
     font-family: Arial, sans-serif;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 .top-info{
     color: #f71c1c;
@@ -103,6 +110,7 @@ body{
 .trends{
     list-style: none;
     padding-left: 64px;
+    margin-bottom: 50px;
 }
 .wrapper-label{
     position: relative;
@@ -163,8 +171,9 @@ body{
     background: #ff0707;
     bottom: 15px;
     left: 300px;
-    width: 127px;
-    height: 127px;
+    width: 123px;
+    height: 123px;
+    box-sizing: border-box;
     line-height: 107px;
     text-align: center;
     color: #ffffff;
@@ -178,27 +187,86 @@ body{
 .cost .cost-count{
     font-size: 48px;
 }
-
+.btn-order{
+    position: relative;
+    left: 66px;
+    border: 1px solid #fc2323;
+    color: #fc2323;
+    padding: 17px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 26px;
+}
+.btn-order:hover{
+    color: #ffffff;
+    border: 1px solid #8c8585;
+    background-color: #8c8585;
+}
+.main-footer{
+    margin-top: 80px;
+}
+.main-footer .copyright{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.copyright .develop{
+    display: inline;
+}
+.copyright .maxima{
+    display: inline-block;
+    width: 71px;
+    height: 16px;
+    background: url("../_img/maxima-logo.png") no-repeat;
+    vertical-align: -4px;
+}
+.maxima img{
+    visibility: hidden;
+}
+.maxima:hover{
+    background: none;
+}
+.maxima:hover img{
+    visibility: visible;
+    border: 0;
+}
+/*.copyright .maxima:hover img{*/
+    /*background-image: url("../_img/maxima.gif");*/
+/*}*/
 .book{
     position: absolute;
     width: 450px;
-    height: 459px;
-    bottom: -150px;
+    height: 504px;
+    bottom: 0px;
     left: -120px;
+    background-image: url("../_img/book.png");
 }
 .phone{
-    z-index: -1;
     position: absolute;
-    width: 233px;
+    width: 270px;
     height: 330px;
-    top: 50px;
-    right: 50px;
+    top: 30px;
+    right: -98px;
+    background-image: url("../_img/phone.png");
 }
-
-
-
-
-
+.cup{
+    position: absolute;
+    width: 261px;
+    height: 263px;
+    bottom: -20px;
+    right: 10px;
+    background-image: url("../_img/cup.png");
+}
+.pen{
+    position: absolute;
+    width: 217px;
+    height: 237px;
+    right: -80px;
+    bottom: 100px;
+    background-image: url("../_img/pen.png");
+}
 
 
 
@@ -206,3 +274,26 @@ h1, h2, p, ul{
     margin: 0px;
     padding: 0;
 }
+
+@media screen and (max-width: 1601px) {
+    .main-wrapper {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1367px) {
+    .phone{
+        top: -10px;
+        right: -80px;
+    }
+    .main-wrapper {
+        margin-top: 15px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+/*@media screen and (max-width: 1280px){*/
+    /*body{*/
+        /*overflow: hidden;*/
+    /*}*/
+/*}*/
